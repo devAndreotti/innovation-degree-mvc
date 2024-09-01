@@ -1,0 +1,98 @@
+@model agendamento
+@{ViewData["Title"] = "Entrevista";}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Definições de estilo responsivo e meta tags essenciais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ricardo Andreotti Gonçalves">
+    <meta name="keywords" content="Entrevista, Agendamento, Emprego"> <!-- Adicione palavras-chave relevantes -->
+    <link rel="stylesheet" href="~/css/styleU1Data.css">
+    <meta charset="UTF-8">
+    <title>Innovation Degree</title>
+</head>
+
+<body>
+    <!-- Novo botão para voltar ao índice -->
+    <div class="back-button-container">
+        <a asp-area="" asp-controller="home" asp-action="index" class="back-button">Voltar ao Início</a>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main id="entrevista-content">
+        <div id="entrevista-form">
+            <div class="main">
+
+                <!-- Seção da esquerda com título e imagem -->
+                <div class="left">
+                    <h1 class="title-content">Pré-agendamento da<br>entrevista online!</h1>
+                    <a asp-area="" asp-controller="home" asp-action="index">
+                        <img src="~/gif/Desenho.svg" class="left-image" alt="Desenho animação">
+                    </a>
+                </div>
+                
+                <!-- Seção da direita com o formulário -->
+                <div class="right">
+                    <div class="card">
+                        <form method="post">
+                            <h2 class="ice">PREENCHA OS CAMPOS AGORA MESMO!</h2>
+                            <br>
+
+                            <!-- Campo para necessidade -->
+                            <div class="textfield">
+                                <label asp-for="necessidade">Necessidade:</label>
+                                <input asp-for="necessidade" class="estilo-input" size="30" required placeholder="Informe o tipo de emprego desejado">
+                            </div>
+                            <br>
+                            
+                            <!-- Campo para email -->
+                            <div class="textfield">
+                                <label asp-for="email">E-mail:</label>
+                                <input asp-for="email" class="estilo-input" size="30" required placeholder="Informe seu e-mail para atualizações">
+                            </div>
+                            <br>
+                            
+                            <!-- Campo para nome -->
+                            <div class="textfield">
+                                <label asp-for="nome">Nome:</label>
+                                <input asp-for="nome" class="estilo-input" size="30" required placeholder="Informe seu nome">
+                            </div>
+                            <br>
+                        
+                            <!-- Campo para data desejada -->
+                            <div class="textfield">
+                                <label asp-for="dataa">Data desejada:</label>
+                                <input asp-for="dataa" class="estilo-input" size="30" required placeholder="Informe a data desejada dd/mm/aa">
+                            </div>
+                            <br>
+                            
+                            <!-- Campo para telefone -->
+                            <div class="textfield">
+                                <label asp-for="fone">Telefone:</label>
+                                <input asp-for="fone" class="estilo-input" size="30" required placeholder="Informe seu telefone para contato">
+                            </div>
+                            <br>
+                            
+                            <!-- Campo para idade -->
+                            <div class="textfield">
+                                <label asp-for="idade">Idade:</label>
+                                <input asp-for="idade" class="estilo-input" size="30" required placeholder="Informe sua idade">
+                            </div>
+                            <br>
+                            <br>
+                            
+                            <!-- Botão de envio do formulário -->
+                            <input class="btn" type="submit" id="form-submit" value="Enviar">
+                            <br>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

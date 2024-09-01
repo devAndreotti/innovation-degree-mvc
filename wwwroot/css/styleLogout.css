@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root {
+    /* Cores principais */
+    --color-primary: #27A800;
+    --color-primary-light: #32c700;
+    
+    /* Cores de fundo */
+    --color-bg-dark: #0A264D;
+    --color-bg-darker: #072a5a;
+    
+    /* Cores de texto */
+    --color-text-light: #ffffff;
+    
+    /* Cores de sombra */
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-shadow-dark: rgba(0, 0, 0, 0.3);
+    
+    /* Cores de overlay */
+    --color-overlay: rgba(0, 0, 0, 0.6);
+}
+
+html, body {
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+body * { /* Qualquer estilo vai servir para todos os elementos dentro de body */
+    box-sizing: border-box; /* Alterar a propriedade padrão da box */
+}
+
+.main {
+    width: 100vw; /* Largura máxima 100% */
+    height: 100vh; /* Altura máxima 100% */
+    background: url(https://wallpaperaccess.com/full/7225631.jpg) no-repeat center center/cover;
+    display: flex; /* Ficar lado a lado */
+    justify-content: center; /* Centraliza as coisas no eixo x */
+    align-items: center; /* Centraliza as coisas no eixo y */
+    background-color: var(--color-overlay);
+    background-blend-mode: overlay;
+}
+
+.container {
+    background-color: var(--color-bg-dark);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px var(--color-shadow-dark);
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--color-primary);
+    margin-bottom: 20px; /* Reduzido de 30px para 20px */
+    text-shadow: 2px 2px 4px var(--color-shadow-dark);
+}
+
+/* Estilo atualizado para o botão, baseado no styleU1Data.css */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-bg-darker);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 10px 40px -12px var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 0; /* Adicionado para garantir que não haja espaço extra acima do botão */
+}
+
+.btn:hover {
+    background-color: var(--color-primary-light);
+}
+
+/* Removendo estilos desnecessários */
+.btn button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 30px;
+        width: 90%;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

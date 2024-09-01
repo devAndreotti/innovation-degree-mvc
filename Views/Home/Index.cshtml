@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Meta tag para definir o conjunto de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    
+    <!-- Meta tag para tornar a página responsiva, ajustando a escala para a largura do dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta tag para definir o autor da página -->
+    <meta name="author" content="Ricardo Andreotti Gonçalves">
+    
+    <meta name="keywords" content="???, ???, ???">
+    
+    <!-- Link para a folha de estilos principal (para telas maiores) -->
+    <link rel="stylesheet" href="~/css/styleMain.css">
+    
+    <!-- Título da página -->
+    <title>Innovation Degree</title>
+    
+    <!-- Link para o kit de ícones FontAwesome -->
+    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Seção de navegação (menu) -->
+    <nav id="navbar">
+        <div id="navbar-container">
+            <!-- Logo do site -->
+            <h1 class="logo">Innovation Degree</h1>
+            
+            <!-- Lista de itens de navegação -->
+            <ul id="navbar-items">
+                <!-- Links para as diferentes seções da página -->
+                <li><a href="#showcase">Início</a></li>
+                <li><a href="#clients">Sobre</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <!-- Links para ações de usuários, como Cadastro e Login (usando ASP.NET) -->
+                <li><a asp-controller="Usuarios" asp-action="Cadastro">Cadastrar</a></li>
+                <li><a asp-controller="Usuarios" asp-action="Login">Login</a></li>
+                <li><a asp-controller="Usuarios" asp-action="Logout">Logout</a></li>
+            </ul>
+        </div> 
+    </nav>
+
+    <!-- Seção de destaque (banner inicial) -->
+    <header id="showcase">
+        <div id="showcase-container">
+            <!-- Título e descrição da seção -->
+            <h2>Damos vida e transformamos em arte suas melhores ideias.</h2>
+            <p>Saiba AGORA como essa grande família se originou!</p>
+            <!-- Botão de ação que leva a outra página usando ASP.NET -->
+            <a class="btn" asp-area="" asp-controller="home" asp-action="Party">SABER MAIS</a>
+        </div>
+    </header>
+
+    <!-- Seção sobre parceiros -->
+    <section id="clients">
+        <div class="headline">Nossos parceiros</div>
+        <div id="clients-container">
+            <!-- Imagens dos parceiros -->
+            <img src="./img/netflix.png" class="client" alt="Parceiro Netflix">
+            <img src="./img/logo-natura-256.png" class="client" alt="Parceiro Natura">
+            <img src="./img/1200px-Logotipo_empresa.png" class="client" alt="Parceiro Empresa">
+            <img src="./img/zarla-techtop-1x1-2400x2400-20211216-gpj68tfpdc6m8rfwcwyr.png" class="client" alt="Parceiro Zarla">
+        </div>
+    </section>
+
+    <!-- Seção de recursos ou serviços oferecidos -->
+    <section id="features">
+        <div class="headline">O que fazemos</div>
+        <div id="features-container">
+            <!-- Cada div representa um recurso ou serviço -->
+            <div class="feature">
+                <i class="fas fa-tachometer-alt fa-3x"></i>
+                <span class="feature-title">Lorem ipsum dolor sit amet.</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque placeat et.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-code fa-3x"></i>
+                <span class="feature-title">Lorem ipsum dolor sit amet.</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque placeat et.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-layer-group fa-3x"></i>
+                <span class="feature-title">Lorem ipsum dolor sit amet.</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque placeat et.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção da galeria de imagens -->
+    <section id="gallery">
+        <div class="headline">Galeria</div>
+        <div id="gallery-container">
+            <!-- Cada img representa uma imagem na galeria -->
+            <img src="./img/01.jpg" alt="Galeria Imagem 1" class="gallery-image">
+            <img src="./img/02.jpg" alt="Galeria Imagem 2" class="gallery-image">
+            <img src="./img/03.jpg" alt="Galeria Imagem 3" class="gallery-image">
+        </div>   
+    </section>
+
+    <!-- Seção de depoimentos -->
+    <div id="testimonials">
+        <div class="headline">O que acham de nós</div>
+        <div id="testimonials-container">
+            <!-- Cada div representa um depoimento de um cliente -->
+            <div class="testimonial">
+                <img src="./img/94ceea61a99369da776f7b741e0f4ce3.jpg" alt="Cliente 1" class="testimonial-image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et quam at justo placerat commodo. Etiam scelerisque lorem sed varius dignissim.</p>
+            </div>
+            <div class="testimonial">
+                <img src="./img/George_Lucas_cropped_2009.jpg" alt="Cliente 2" class="testimonial-image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed felis metus. Donec facilisis diam risus, eu pharetra diam fringilla non.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção do produto oferecido -->
+    <section id="product">
+        <div class="headline">Nosso produto</div>
+        <div id="product-container">
+            <div id="items">
+                <!-- Cada div representa um item ou característica do produto -->
+                <div class="item">
+                    <i class="fas fa-users fa-2x color-primary" aria-hidden="true"></i>
+                    <p>Nullam augue nibh, aliquet tempor sollicitudin vel, eleifend quis felis.</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-handshake-angle fa-2x" aria-hidden="true"></i>
+                    <p>Nullam augue nibh, aliquet tempor sollicitudin vel, eleifend quis felis.</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-book fa-2x color-primary" aria-hidden="true"></i>
+                    <p>Nullam augue nibh, aliquet tempor sollicitudin vel, eleifend quis felis.</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-wand-magic-sparkles fa-2x color-primary" aria-hidden="true"></i>
+                    <p>Nullam augue nibh, aliquet tempor sollicitudin vel, eleifend quis felis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé da página -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a asp-area="" asp-controller="Agendamento" asp-action="Entrevista" class="footer-link">Trabalhe Conosco</a>
+                <a asp-area="" asp-controller="Venda" asp-action="Conceito" class="footer-link">Nos Venda Ideias</a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2022 Innovation Degree - Todos os direitos reservados</p>
+                <p>Feito pela equipe Innovation Degree</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Inclusão de kits de ícones FontAwesome -->
+    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20306421c9.js" crossorigin="anonymous"></script>
+
+    <!-- Inclusão da biblioteca jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</body>
+
+</html>

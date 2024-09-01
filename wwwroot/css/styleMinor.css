@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root {
+    /* Cores principais */
+    --color-primary: #27A800;
+    --color-primary-light: #32c700;
+    
+    /* Cores de fundo */
+    --color-bg-dark: #0A264D;
+    --color-bg-darker: #072a5a;
+    
+    /* Cores de texto */
+    --color-text-dark: hsl(200deg 19% 18%);
+    
+    /* Cores de sombra */
+    --color-shadow-dark: #17202A;
+}
+
+html, body {
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body * { /* Qualquer estilo vai servir para todos os elementos dentro de body */
+    box-sizing: border-box; /* Alterar a propriedade padrão da box */
+}
+
+.main {
+    width: 100vw; /* Largura máxima 100% */
+    height: 100vh; /* Altura máxima 100% */
+    background: var(--color-bg-dark);
+    display: flex; /* Ficar lado a lado */
+    justify-content: center; /* Centraliza as coisas no eixo x */
+    align-items: center; /* Centraliza as coisas no eixo y */
+}
+
+.left {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Uma de baixo da outra */
+}
+
+.left > h1 {
+    color: var(--color-primary);
+    font-size: 3vw;
+}
+
+.left-image {
+    width: 35vw;
+    max-width: 400px; /* Limita o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.right {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 90%; /* Alterado de 60% para 90% */
+    max-width: 600px; /* Adicionado max-width para limitar o tamanho em telas grandes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; /* Ajustado para um valor único */
+    background: var(--color-bg-darker);
+    border-radius: 8px;
+    box-shadow: 0px 10px 40px var(--color-shadow-dark);
+    margin: 20px auto; /* Centraliza o card e adiciona margem vertical */
+}
+
+.card > h1 {
+    color: var(--color-primary);
+    font-weight: 800;
+    margin: 0 0 15px 0; /* Adicionado margem inferior */
+    font-size: 24px; /* Tamanho de fonte fixo */
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alterado para centralizar o conteúdo */
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.text > p {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    background: hsl(106deg 50% 87%);
+    color: var(--color-text-dark);
+    font-size: 14px; /* Ajustado para um tamanho menor */
+    line-height: 1.6; /* Adicionado line-height para melhor legibilidade */
+    box-shadow: 0px 10px 40px var(--color-shadow-dark);
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 15px; /* Adicionado margem inferior */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-primary); /* Mantendo a cor original do botão em styleMinor.css */
+    color: var(--color-bg-dark); /* Cor do texto do botão original em styleMinor.css */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 10px 40px -12px var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--color-primary-light); /* Cor de hover do botão 'voltar' em styleU1Data.css */
+}
+
+.btn button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+@media (max-width: 1700px) {
+    .extra {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left {
+        display: none; /* Remove a seção esquerda (imagem) em telas menores */
+    }
+
+    .right {
+        width: 100vw;
+        height: auto;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0;
+        padding: 30px 20px;
+    }
+
+    .card > h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    /* Adiciona um novo estilo para o título na parte superior do card */
+    .card-title {
+        color: var(--color-primary);
+        font-size: 32px;
+        font-weight: 800;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    /* Ajusta o overflow para permitir rolagem em telas menores */
+    html, body {
+        overflow-y: auto;
+    }
+}
+
+.sobre { /* Enfeite e redes sociais */
+    height: calc(100% - 200px);
+    position: relative;
+}
+
+.extra {
+    position: absolute;
+    bottom: -500px;
+    right: -500px;
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+}
+
+.social-media {
+    position: absolute;
+    right: 510px;
+    top: 100px;
+}
+
+.social-media img {
+    display: block;
+    width: 20px;
+    margin: 20px 0;
+}
+
+@media (min-width: 1200px) {
+    .left-image {
+        width: 30vw; /* Reduz um pouco mais o tamanho em telas muito grandes */
+    }
+}

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<body>
+
+    <!-- Função JavaScript para formatar o texto de entrada com base em uma máscara -->
+    <script>
+    function formatar(mascara, documento) {
+        var i = documento.value.length;
+        var saida = mascara.substring(0, 1);
+        var texto = mascara.substring(i);
+        
+        if (texto.substring(0, 1) != saida) {
+            documento.value += texto.substring(0, 1);
+        }
+    }
+    </script>
+
+    <!-- Seção principal onde o conteúdo é renderizado dinamicamente -->
+    <div class="render">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Inclusão de ícones do Font Awesome -->
+    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20306421c9.js" crossorigin="anonymous"></script>
+
+    <!-- Inclusão do jQuery, uma biblioteca JavaScript, para manipulação e animação -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Inclusão de um arquivo JavaScript personalizado para animações -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

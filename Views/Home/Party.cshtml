@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Meta tag para definir o conjunto de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+
+    <!-- Meta tag para tornar a página responsiva, ajustando a escala para a largura do dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta tag para definir o autor da página -->
+    <meta name="author" content="Ricardo Andreotti Gonçalves">
+
+    <meta name="keywords" content="???, ???, ???">
+    
+    <!-- Link para a folha de estilos principal -->
+    <link rel="stylesheet" href="~/css/styleMinor.css">
+    
+    <!-- Título da página -->
+    <title>Innovation Degree</title>
+</head>
+
+<body>
+
+    <!-- Seção principal do conteúdo -->
+    <div class="main">
+        
+        <!-- Seção à esquerda contendo título e imagem -->
+        <div class="left">
+            <h1>Descubra tudo<br>sobre o nosso passado!</h1>
+            <!-- Link com imagem que direciona para a página inicial -->
+            <a asp-area="" asp-controller="home" asp-action="index">
+                <img src="~/gif/Desenho.svg" class="left-image" alt="Desenho animação">
+            </a>
+        </div>
+        
+        <!-- Seção à direita contendo o cartão com a história -->
+        <div class="right">
+            <div class="card">
+                <h1>História</h1>
+                
+                <!-- Texto descritivo sobre a história -->
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nulla sagittis elit sodales dui interdum, in sodales ipsum 
+                    dapibus. Proin bibendum in turpis ut semper. Maecenas at est 
+                    ultrices, euismod sapien id, vulputate mauris. Donec faucibus 
+                    urna quis odio pharetra finibus. Aenean convallis, arcu ut dignissim 
+                    ornare, enim velit aliquet diam, eget vestibulum lorem dui ac leo. Integer 
+                    ut justo imperdiet, tempor enim in, consectetur nisl. Nunc at risus a dolor 
+                    varius fermentum non eget nisl. Vestibulum viverra tempus purus, sit amet 
+                    placerat quam. Duis dignissim mi ac hendrerit congue.</p>
+
+                    <br>
+                    
+                    <!-- Botão de voltar para a página inicial -->
+                    <a asp-area="" asp-controller="home" asp-action="index" class="btn">
+                        <button class="btn">VOLTAR</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Seção adicional com enfeite e links para redes sociais -->
+    <section class="sobre">
+        <div class="extra">
+
+            <!-- Ícones de redes sociais -->
+            <div class="social-media">
+                <a href="https://www.facebook.com/">
+                    <img src="~/img/ffacebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="~/img/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="~/img/twitter.png" alt="Twitter">
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

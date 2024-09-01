@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root {
+    /* Cor de fundo */
+    --color-bg-dark: #0A264D;
+}
+
+html, body {
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body * { /* Qualquer estilo vai servir para todos os elementos dentro de body */
+    box-sizing: border-box; /* Alterar a propriedade padrão da box */
+}
+
+.main {
+    width: 100vw; /* Largura máxima 100% */
+    height: 100vh; /* Altura máxima 100% */
+    background: var(--color-bg-dark);
+    display: flex; /* Ficar lado a lado */
+    justify-content: center; /* Centraliza as coisas no eixo x */
+    align-items: center; /* Centraliza as coisas no eixo y */
+}

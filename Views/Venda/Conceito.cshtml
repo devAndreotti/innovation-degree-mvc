@@ -1,0 +1,86 @@
+@model venda
+@{ ViewData["Title"] = "Venda"; }
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Links para folhas de estilo e meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ricardo Andreotti Gonçalves">
+    <meta name="keywords" content="Venda, Conceito, Contato">
+    <link rel="stylesheet" href="~/css/styleU2Data.css">
+    <meta charset="UTF-8">
+    <title>Venda - Innovation Degree</title> <!-- Título mais específico -->
+</head>
+
+<body>
+    <!-- Novo botão para voltar ao índice -->
+    <div class="back-button-container">
+        <a asp-area="" asp-controller="home" asp-action="index" class="back-button">Voltar ao Início</a>
+    </div>
+    
+    <!-- Conteúdo principal da página -->
+    <main id="venda-content">
+        <div id="venda-form">
+            <div class="main">
+
+                <!-- Seção esquerda com imagem e título -->
+                <div class="left">
+                    <h1 class="title-content">Há algo grandioso<br>em mente?</h1>
+                    <a asp-area="" asp-controller="home" asp-action="index">
+                        <img src="~/gif/Desenho.svg" class="left-image" alt="Desenho animação">
+                    </a>
+                </div>
+
+                <!-- Seção direita com formulário -->
+                <div class="right">
+                    <div class="card">
+                        <form method="post">
+                            <h2 class="ice">PREENCHA OS CAMPOS AGORA MESMO!</h2>
+
+                            <br>
+                            <div class="textfield">
+                                <label asp-for="conceito">Conceito:</label>
+                                <input asp-for="conceito" class="estilo-input" size="30" required placeholder="Informe a ideia a ser trabalhada">
+                            </div>
+                            <br>
+
+                            <div class="textfield">
+                                <label asp-for="email">E-mail:</label>
+                                <input asp-for="email" class="estilo-input" size="30" required placeholder="Informe seu e-mail para atualizações">
+                            </div>
+                            <br>
+
+                            <div class="textfield">
+                                <label asp-for="nome">Nome:</label>
+                                <input asp-for="nome" class="estilo-input" size="30" required placeholder="Informe seu nome">
+                            </div>
+                            <br>
+
+                            <div class="textfield">
+                                <label asp-for="fone">Telefone:</label>
+                                <input asp-for="fone" class="estilo-input" size="30" required placeholder="Informe seu telefone para contato">
+                            </div>
+                            <br>
+
+                            <div class="textfield">
+                                <label asp-for="idade">Idade:</label>
+                                <input asp-for="idade" class="estilo-input" size="30" required placeholder="Informe sua idade">
+                            </div>
+                            <br>
+                            <br>
+
+                            <input class="btn" type="submit" id="form-submit" value="Enviar">
+                            <br>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+@model usuarios
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Definições de estilo e meta tags essenciais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ricardo Andreotti Gonçalves">
+    <meta name="keywords" content="login, Usuário, Autenticação"> <!-- Adicionei palavras-chave relevantes -->
+    <link rel="stylesheet" href="~/css/styleLogin.css">
+    <meta charset="UTF-8">
+    <title>Login - Innovation Degree</title> <!-- Título mais descritivo -->
+</head>
+
+<body>
+
+    <!-- Botão para retornar à página inicial -->
+    <div class="back-button-container">
+        <a asp-area="" asp-controller="home" asp-action="Index" class="back-button">VOLTAR</a>
+    </div>
+
+    <!-- Conteúdo principal da página -->
+    <main id="login-content">
+        <div id="login-form">
+            <div class="main">
+                <div class="right">
+                    <div class="card">
+                        <h2 class="ice">Está na hora de logar!</h2>
+
+                        <!-- Formulário de login -->
+                        <div class="container w-50 jumbotron">
+                            <form action="Login" method="POST">
+
+                                <br>
+
+                                <!-- Campo para login do usuário -->
+                                <div class="textfield">
+                                    <label asp-for="login">Login do usuário:</label>
+                                    <input class="form-control estilo-input" asp-for="login" type="text" required placeholder="Informe seu login"/>
+                                </div>
+
+                                <br>
+
+                                <!-- Campo para senha do usuário -->
+                                <div class="textfield">
+                                    <label asp-for="senha">Senha do usuário:</label>
+                                    <input class="form-control estilo-input" asp-for="senha" type="password" required placeholder="Informe sua senha"/> <!-- Alterei para type="password" para ocultar a senha -->
+                                </div>
+
+                                <br>
+                                <br>
+
+                                <!-- Botão de submissão do formulário -->
+                                <input class="btn" type="submit" value="Entrar"/>
+
+                                <br><br>
+
+                                <!-- Mensagem de feedback -->
+                                <p>@ViewBag.Mensagem</p>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
