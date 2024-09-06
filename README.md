@@ -2,17 +2,15 @@
 # 🎲 Innovation Degree
 <p align="center">
   <!-- Contador de linguagens do GitHub -->
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/devAndreotti/dataform-mvc?color=FFF&labelColor=635184&style=flat-square" >
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/devAndreotti/innovation-degree-mvc?color=FFF&labelColor=635184&style=flat-square" >
   <!-- Tamanho do repositório no GitHub -->
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/devAndreotti/dataform-mvc?color=FFF&labelColor=635184&style=flat-square" >
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/devAndreotti/innovation-degree-mvc?color=FFF&labelColor=635184&style=flat-square" >
   <!-- Licença do GitHub -->
   <img alt="GitHub License" src="https://img.shields.io/github/license/devAndreotti/devAndreotti?color=FFF&labelColor=635184&style=flat-square" >
 </p>
 
 <div align="center">
-  <img src="./src/imagens/thor.jpg" alt="Thor Banner" width="250" style="display: block;">
-  <img src="./src/imagens/hulk.jpg" alt="Hulk Banner" width="250" style="display: block;">
-  <img src="./src/imagens/ultron.jpg" alt="Ultron Banner" width="250" style="display: block;">
+  <img src="./src/imagens/home.png" alt="Home Banner">
 </div>
 
 ## 💻 Sobre o Projeto
@@ -23,11 +21,10 @@ Innovation Degree é uma aplicação web desenvolvida em uma atividade de um cur
 - [x] Sistema básico de registro e login de usuários
 - [x] Submissão de conceitos de produtos
 - [x] Exibição dinâmica de conteúdo
-- [x] Agendamento de compromissos
+- [x] Agendamento de entrevistas
 
 ## ⚠️ Pré-requisitos
 Antes de começar, instale e configure as seguintes ferramentas:
-
 - **[.NET SDK 3.1 ou superior](https://dotnet.microsoft.com/download)**: Necessário para desenvolver e executar a aplicação ASP.NET Core MVC.
 - **[MySQL Server 8.0 ou superior](https://dev.mysql.com/downloads/mysql/)**: Para gerenciar o banco de dados utilizado pela aplicação.
 - **[MySQL Workbench](https://dev.mysql.com/downloads/workbench/)**: Ferramenta gráfica para administração do MySQL.
@@ -51,6 +48,7 @@ $ cd innovation-degree-mvc-project
 
 # Atualize a string de conexão
 # Modifique os arquivos Models/agendamentoRepository.cs, Models/usuariosRepository.cs e Models/vendaRepository.cs
+
 # Atualize as credenciais do MySQL na string de conexão
 
 # Restaure as dependências
