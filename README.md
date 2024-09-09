@@ -10,15 +10,15 @@
 </p>
 
 <div align="center">
-  <img src="./src/imagens/home.png" alt="Home Banner">
+  <img src="./home.png" alt="Home Banner">
 </div>
 
 ## 💻 Sobre o Projeto
 Innovation Degree é uma aplicação web desenvolvida em uma atividade de um curso Técnico em Informática no ano de 2022, com atualizações realizadas em 2024. É construída utilizando a arquitetura MVC (Model-View-Controller) e incorpora funcionalidades de banco de dados usando MySQL.
 
 ## ⚙️ Funcionalidades
-- [x] Design responsivo para diversos tamanhos de tela
-- [x] Sistema básico de registro e login de usuários
+- [x] Design responsivo
+- [x] Sistema básico de registro e login
 - [x] Submissão de conceitos de produtos
 - [x] Exibição dinâmica de conteúdo
 - [x] Agendamento de entrevistas
@@ -77,4 +77,4 @@ $ https://localhost:5001
 5. Abra um Pull Request.
 
 ## 📌 Nota do Projeto
-Este projeto foi originalmente desenvolvido como parte de uma atividade educacional e está sob a Licença MIT. Sinta-se à vontade para utilizá-lo e modificá-lo conforme os termos da licença.
+Este projeto foi originalmente desenvolvido como parte de uma atividade do **Senac** e está sob a Licença MIT. Sinta-se à vontade para utilizá-lo e modificá-lo conforme os termos da licença.
