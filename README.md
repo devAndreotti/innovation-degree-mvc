@@ -14,7 +14,7 @@
 </div>
 
 ## 💻 Sobre o Projeto
-O Innovation Degree é uma aplicação web criada como parte de um curso Técnico. O projeto, que passou por diversas atualizações, utiliza a arquitetura MVC (Model-View-Controller) para uma estrutura eficiente e organizada. Além disso, integra funcionalidades de banco de dados com MySQL.
+O Innovation Degree foi minha primeira aplicação desenvolvida com a arquitetura MVC (Model-View-Controller), criada durante um curso Técnico em Informática. O projeto passou por atualizações e agora integra funcionalidades de banco de dados com MySQL.
 
 ## ⚙️ Funcionalidades
 - [x] Design responsivo
@@ -67,6 +67,21 @@ $ https://localhost:5001
 - HTML5
 - CSS3
 - C#
+
+## 🔄 Versão 2.0
+Responsividade implementada e o CSS foi otimizado e melhorado.
+<div align="center">
+  <img src="./cadastro.png" alt="Página de Cadastro" width="1000">
+  <img src="./loggout.png" alt="Página de Loggout" width="1000">
+  <img src="./form01.png" alt="Página de Formulário" width="1000">
+</div>
+
+## 🔄 Versão 1.0
+A aplicação apresentava alguns problemas significativos, como a falta de responsividade e CSS redundante. 
+<div align="center">
+  <img src="./homeAntiga.png" alt="Página Inicial da Antiga Iniciativa Saúde" width="1000">
+  <img src="./cadastroAntigo.png" alt="Página Inicial da Antiga Iniciativa Saúde" width="1000">
+</div>
 
 ## 💪 Contribuição
 1. Faça um fork do projeto.
