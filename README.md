@@ -2,11 +2,11 @@
 # 🎲 Innovation Degree
 <p align="center">
   <!-- Contador de linguagens do GitHub -->
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/devAndreotti/innovation-degree-mvc?color=FFF&labelColor=27a700&style=flat-square" >
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/devAndreotti/innovation-degree-mvc?color=FFF&labelColor=27a700&style=flat-square">
   <!-- Tamanho do repositório no GitHub -->
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/devAndreotti/innovation-degree-mvc?color=FFF&labelColor=27a700&style=flat-square" >
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/devAndreotti/innovation-degree-mvc?color=FFF&labelColor=27a700&style=flat-square">
   <!-- Licença do GitHub -->
-  <img alt="GitHub License" src="https://img.shields.io/github/license/devAndreotti/devAndreotti?color=FFF&labelColor=27a700&style=flat-square" >
+  <img alt="GitHub License" src="https://img.shields.io/github/license/devAndreotti/devAndreotti?color=FFF&labelColor=27a700&style=flat-square">
 </p>
 
 <div align="center">
