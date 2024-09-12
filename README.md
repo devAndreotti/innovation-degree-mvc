@@ -1,5 +1,5 @@
 <!-- Projeto em Melhoria -->
-# 🎲 Innovation Degree
+# 🧪 Innovation Degree
 <p align="center">
   <!-- Contador de linguagens do GitHub -->
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/devAndreotti/innovation-degree-mvc?color=FFF&labelColor=27a700&style=flat-square">
