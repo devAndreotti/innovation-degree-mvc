@@ -61,12 +61,12 @@ $ https://localhost:5001
 ```
 
 ## 🛠 Tecnologias Utilizadas
-- MySQL (com MySQL Workbench)
-- ASP.NET Core MVC
-- JavaScript
-- HTML5
-- CSS3
-- C#
+- [MySQL (com MySQL Workbench)](https://www.mysql.com/products/workbench/)
+- [ASP.NET Core MVC](https://dotnet.microsoft.com/en-us/apps/aspnet/mvc)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [C#](https://learn.microsoft.com/pt-br/dotnet/csharp/)
 
 ## 🔄 Versão 2.0
 Responsividade implementada e o CSS foi otimizado e melhorado.
@@ -92,3 +92,8 @@ A aplicação apresentava alguns problemas significativos, como a falta de respo
 
 ## 📌 Nota do Projeto
 Este projeto foi originalmente desenvolvido como parte de uma atividade do **Senac** e está sob a Licença MIT. Sinta-se à vontade para utilizá-lo e modificá-lo conforme os termos da licença.
+
+<br>
+
+---
+<p align="center"> Desenvolvido por <a href="https://github.com/devAndreotti">Ricardo Andreotti Gonçalves</a> </p>
